@@ -12,7 +12,7 @@ const HappyThreadPool = HappyPack.ThreadPool({
   size: (IsProduction ? 10 : 4)
 });
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const staticUrl = '//cdn.com';
+const staticUrl = '../';
 const publicPath = IsProduction ? staticUrl : '/';
 const extraPath = IsProduction ? '/' : '';
 
