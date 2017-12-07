@@ -1,0 +1,413 @@
+@charset "UTF-8";
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+textarea,
+p,
+blockquote,
+th,
+td,
+input,
+select,
+textarea,
+button {
+    margin: 0;
+    padding: 0;
+    font-family: 'Microsoft YaHei','Lantinghei SC','Open Sans',Arial,'Hiragino Sans GB',STHeiti,'WenQuanYi Micro Hei',SimSun,sans-serif;
+}
+
+
+/* 初始化标签在所有浏览器中的margin、padding值 */
+
+fieldset,
+img {
+    border: 0 none
+}
+
+
+/* 重置fieldset（表单分组）、图片的边框为0*/
+
+dl,
+ul,
+ol,
+menu,
+li {
+    list-style: none
+}
+
+
+/* 重置类表前导符号为onne,menu在HTML5中有效 */
+
+blockquote,
+q {
+    quotes: none
+}
+
+
+/* 重置嵌套引用的引号类型 */
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none
+}
+
+
+/* 重置嵌套引用*/
+
+input,
+select,
+textarea,
+button {
+    vertical-align: middle
+}
+
+
+/* 重置表单控件垂直居中*/
+
+button {
+    border: 0 none;
+    background-color: transparent;
+    cursor: pointer
+}
+
+
+/* 重置表单button按钮效果 */
+
+body {
+    background: #f5f5f5;
+}
+
+
+/* 重置body 页面背景为白色 */
+
+body,
+th,
+td,
+input,
+select,
+textarea,
+button {
+    // font-family: "微软雅黑", "黑体", "宋体";
+    color: #333;
+    font-size: .16rem;
+}
+
+
+/* 重置页面文字属性 */
+
+a {
+    color: #666;
+    text-decoration: none
+}
+
+
+/* 重置链接a标签 */
+
+a:active,
+a:hover {
+    text-decoration: none
+}
+
+
+/* 重置链接a标签的鼠标滑动效果 */
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+var {
+    font-style: normal;
+    font-weight: normal
+}
+
+
+/* 重置样式标签的样式 */
+
+caption {
+    display: none;
+}
+
+
+/* 重置表格标题为隐藏 */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+
+
+/* 重置table属性 */
+
+img {
+    vertical-align: top
+}
+
+
+/* 图片在当前行内的垂直位置 */
+
+
+/* 页面设置 */
+i{
+    font-style: normal;
+}
+
+/* 取消a标签点击后的虚线框 */
+
+a {
+    outline: none;
+}
+
+a:active {
+    star: expression(this.onFocus=this.blur());
+}
+
+
+/* 设置页面文字等在拖动鼠标选中情况下的背景色与文字颜色 */
+
+
+/*
+::selection {color: #fff;background-color: #4C6E78;}
+::-moz-selection {color: #fff;background-color: #4C6E78;}
+*/
+
+
+/*清除浮动*/
+
+.clear {
+    clear: both;
+}
+
+
+/*清除浮动*/
+
+.clearfix:before,
+.clearfix:after {
+    content: '';
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/*基尺寸*/
+
+html {
+    font-size: 100px;
+}
+
+.container-full {
+    padding: 0 0.4rem;
+    min-height: 10rem;
+    position: relative;
+}
+
+.content-min-height {
+    min-height: 10rem;
+}
+
+.hide {
+    display: none;
+}
+
+.error {
+    color: red;
+}
+
+.block {
+    display: block;
+}
+
+.loading {
+    -webkit-animation: fa-spin 2s infinite linear;
+    animation: fa-spin 2s infinite linear
+}
+
+@-webkit-keyframes fa-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg)
+    }
+}
+
+@keyframes fa-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg)
+    }
+}
+
+
+/*模板1*/
+
+.model1 {
+    float: left;
+    width: 33%;
+    box-sizing: border-box;
+    padding: 0 2%;
+    margin: .2rem 0;
+}
+
+.model1_img {
+    width: 32%;
+    height: 1.1rem;
+    float: left;
+    overflow: hidden;
+}
+
+.model1_img img {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.model1_text {
+    float: left;
+    box-sizing: border-box;
+    height: 1.1rem;
+    padding-left: 3%;
+    width: 68%;
+    position: relative;
+}
+
+.model1_title {
+    // font-weight: 600;
+    font-size: .20rem;
+    overflow: hidden;
+}
+
+.model1_tag {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    // color: #999;
+}
+
+
+/*模板2*/
+
+.model2_img img {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    box-sizing: border-box;
+}
+
+.model2_text {
+    height: .5rem;
+    line-height: .5rem;
+    background-color: #f8f8f8;
+}
+
+.model2_text {
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    padding-left: .2rem;
+}
+
+.model2_text_title {
+    color: #333;
+    font-weight: 600;
+}
+
+.more {
+    float: right;
+    // color: $theme-color;
+    font-size: .17rem;
+    // font-weight: 600;
+    position: absolute;
+    right: 0;
+    top: -5px;
+}
+
+.more span {
+    font-weight: 900;
+    font-size: .3rem;
+    color: #999;
+    vertical-align: -4px;
+}
+
+.go_top {
+    position: fixed;
+    right: 5px;
+    bottom: 0.5rem;
+    z-index: 12;
+    width: .7rem;
+}
+
+.go_top img {
+    width: 100%;
+}
+
+
+/*页尾*/
+
+.page_bottom {
+    border-top: 2px solid #ddd;
+    padding: .3rem 0 .1rem 0;
+    text-align: center;
+}
+
+.page_bottom>p {
+    line-height: .3rem;
+    font-size: .18rem;
+    color: #666;
+}
+
+.head {
+    padding: 0.2rem 0.2rem;
+    .current-location {
+        float: left;
+        line-height: 27px;
+    }
+    .login-reg {
+        line-height: .3rem;
+        span {
+            float: right;
+            margin-right: 2%;
+        }
+        .login {
+            // color: $theme-color;
+        }
+    }
+    .user-name {
+        // color: $theme-color;
+        font-weight: normal;
+    }
+}
+.content .content_l .box1 .text_box .but_box .but2.record{
+    // background-color: $theme-color;
+    color: #fff;
+}
