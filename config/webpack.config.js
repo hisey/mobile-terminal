@@ -160,8 +160,9 @@ const config = {
     ],
     disableHostCheck: true, // https://stackoverflow.com/questions/43650550/invalid-host-header-in-when-running-react-app
     hot: false,
-    host: '0.0.0.0',
+    host: '127.0.0.1',
     port: 8080,
+    open : true,
     /*proxy: {
       "/m/public": {
       	target: "http://localhost:8080",
