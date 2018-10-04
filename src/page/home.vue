@@ -1,18 +1,11 @@
 <template>
   <div id="home">
-    <search style="z-index: 999;position:fixed;top:0">
-    </search>
+    <!-- <search style="z-index: 999;position:fixed;top:0">
+    </search> -->
     <swiper :list="imgList">
     </swiper>
     <load-more :show-loading="false" tip="热门推荐" background-color="#fbf9fe"  class="load-more" ></load-more>
-    <flexbox>
-      <flexbox-item>
-        <div class="flex-demo">1</div>
-      </flexbox-item>
-      <flexbox-item>
-        <div class="flex-demo">2</div>
-      </flexbox-item>
-    </flexbox>
+     <router-link :to="{path:'/HelloWorld'}">链接</router-link> 
   </div>
 </template>
 

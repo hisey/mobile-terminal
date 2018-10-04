@@ -83,8 +83,14 @@ export default {
 @import "~vux/src/styles/1px.less";
 @import "~vux/src/styles/close.less";
 </style>
-<style lang="sass">
-@import './style/style.scss' ;
+
+<style lang="scss">
+ body{
+  //  background-color:red;
+   a{
+     color:blue
+   }
+ }
 </style>
 
 

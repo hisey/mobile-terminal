@@ -8,7 +8,7 @@ import {
 } from 'vux'
 
 const shouldUseTransition = !/transition=none/.test(location.href)
-const geolocation = new qq.maps.Geolocation(mapKey, "myapp");
+// const geolocation = new qq.maps.Geolocation(mapKey, "myapp");
 const options = {
   timeout: 9000
 };
@@ -77,7 +77,7 @@ const app = {
           })
           reject()
         };
-        geolocation.getLocation(showPosition, showErr, options);
+        // geolocation.getLocation(showPosition, showErr, options);
       })
     }
   }
