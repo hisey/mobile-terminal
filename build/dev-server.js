@@ -10,13 +10,7 @@ var path = require('path')
 var express = require('express')
 var webpack = require('webpack')
 var proxyMiddleware = require('http-proxy-middleware')
-<<<<<<< HEAD
 var webpackConfig = require('./webpack.dev.conf')
-=======
-var webpackConfig = process.env.NODE_ENV === 'testing'
-  ? require('./webpack.prod.conf')
-  : require('./webpack.dev.conf')
->>>>>>> da9b2a2c5b0e5eb79868c3635c622b262b6713bb
 
 // default port where dev server listens for incoming traffic
 var port = process.env.PORT || config.dev.port

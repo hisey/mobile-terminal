@@ -3,12 +3,9 @@ node_modules/
 dist/
 npm-debug.log
 yarn-error.log
-<<<<<<< HEAD
-=======
 /test/unit/coverage/
 /test/e2e/reports/
 selenium-debug.log
->>>>>>> da9b2a2c5b0e5eb79868c3635c622b262b6713bb
 
 # Editor directories and files
 .idea
