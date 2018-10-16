@@ -17,6 +17,15 @@ export function timeAgo(time) {
     return pluralize(~~(between / 86400), ' day')
   }
 }
+
+//限制文字显示字数
+export function limit (val, param) {
+      let result = val;
+      if (result && result.length > param) {
+        result = result.substring(0, param) + "...";
+      }
+      return result;
+}
 //时间戳转换为时间
 export  function dataFormat(val) {
       if (val == "" || val == 0) return "";
